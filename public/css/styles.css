@@ -1,0 +1,144 @@
+/*main.css master.css index.css styles.css estilos.css*/
+/*=== Aplicando CSS Global===*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #737373;
+}
+h4{
+    margin: auto;
+    width: 50%;
+}
+
+/*=== Aplicando CSS al Encabezado===*/
+header{
+    background-color: black;
+}
+.iconosEncabezado{
+    display: flex;
+    width: 5%;
+    justify-content: space-around;
+    padding: auto;
+    margin: auto;
+}
+input{
+    width: 40%;
+    padding: auto;
+    margin: auto;
+}
+.topHeader{
+    padding: 20px;
+    display: flex;
+}
+.logo {
+    width: 40%;
+}
+figure img{
+    width: 60%;
+}
+.menu{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+.opcionesMenu{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+ul li a{
+    color: white;
+}
+
+/*=== Aplicando CSS a la sección de productos===*/
+article.producto a.boton{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+
+
+@media (min-width: 768px){
+    /*=== Aplicando CSS al encabezado===*/
+    .encabezado{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+      width: 20%; 
+      margin: 0; 
+      padding-left: 10px;
+    }
+    .menu{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+    }
+    /*=== Aplicando CSS  al carrusel===*/
+    
+    .slider {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 200%;
+        
+        animation: cambio 10s infinite alternate linear;
+    }
+    
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider img {
+        width: 100%;
+    }
+    
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+        
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+    }
+    
+
+    /*=== APlicando CSS a la sección de productos===*/
+    .productos{
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    /*=== Aplicando CSS  al Footer===*/
+    .piePagina{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .redesSociales{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+    }
+    ul.redesSociales li a{
+        color: white;
+    }
+}
