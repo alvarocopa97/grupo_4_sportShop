@@ -16,19 +16,23 @@ body{
 }
 h4{
     margin: auto;
-    width: 50%;
+    padding: 40px;
+    padding-left: 20%;
+    font-size: 30px;
 }
 
 /*=== Aplicando CSS al Encabezado===*/
 header{
     background-color: black;
+    padding: 15px;
 }
 .iconosEncabezado{
     display: flex;
-    width: 5%;
+    width: 8%;
     justify-content: space-around;
     padding: auto;
     margin: auto;
+    font-size: 40px;
 }
 input{
     width: 40%;
@@ -55,16 +59,18 @@ figure img{
     justify-content: space-around;
     width: 80%;
 }
-ul li a{
+header nav ul li a{
     color: white;
+    font-size: 30px;
 }
 
 /*=== Aplicando CSS a la sección de productos===*/
 article.producto a.boton{
     text-decoration: none;
     color: white;
-    background-color: blue;
+    background-color: black;
     border-radius: 10px;
+    padding: 10px;
 }
 
 /*=== Aplicando CSS  al carrusel===*/
@@ -121,23 +127,42 @@ article.producto a.boton{
     /*=== APlicando CSS a la sección de productos===*/
     .productos{
         display: flex;
-        width: 50%;
-        margin: auto;
+        padding-left: 20%;
+        padding-bottom: 40px;
+    }
+    section .producto{
+        padding-right: 100px;
+    }
+    article img{
+        width: 350px;
+    }
+    h6{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    h5{
+        font-size: 20px;
+        padding-bottom: 15px;
     }
     /*=== Aplicando CSS  al Footer===*/
     .piePagina{
         background-color: black;
         color: white;
         display: flex;
-        justify-content: space-between;
-        padding: 30px;
+        justify-content: space-around;
     }
     .redesSociales{
         display: flex;
         width: 40%;
         justify-content: space-around;
     }
-    ul.redesSociales li a{
+    footer p{
+        font-weight: bolder;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    footer ul li a{
         color: white;
     }
 }
