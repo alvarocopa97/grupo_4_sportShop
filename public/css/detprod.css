@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.detprod{
+    background: rgb(160, 160, 160);
+    margin-right: 20%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    padding-top: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 10rem;
+}
+
+.subdet1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    max-height: 500px;
+    max-width: 500px;
+    
+}
+.subdet2{
+    margin-left: 1rem;
+    max-width: 500px;
+    max-height: 500px;
+    padding-left: 3rem;
+}
+
+.det{
+    padding-left: 2rem;
+}
+
+.det #nombre{
+    font-size: 40px;
+}
+.det #precio{
+    padding-top: 1rem;
+    font-size: 35px;
+}
+
+.det #prod{
+    padding-top: 1rem;
+    font-size: 25px;
+}
+
+.talle{
+    
+    padding-left: 2rem;
+}
+
+.talle h2{
+    padding-top: 1rem;
+    font-size: 35px;
+}
+
+.talle button{
+    
+    background-color: rgb(228, 228, 228);
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin-left: 1.5rem;
+}
+
+.carrito{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito button{
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    width: 300px;
+    height: 50px;
+    
+}
+
+.subdet3{
+    padding-top: 3rem;
+    max-width: 500px;
+}
+
+.subdet3 #subtex{
+    padding-top: 1rem;
+    font-size: 20px;
+}
+
+.subdet3 #subt{
+    padding-top: 1rem;
+}
+
+.subdet3 table{
+    font-size: 15px;
+}
+
+.subdet3 table tbody tr td{
+    padding-left: 3rem;
+    padding-right: 6rem;
+    padding: 1rem 7rem 1rem 3rem;
+    border: 1px solid black;
+}
