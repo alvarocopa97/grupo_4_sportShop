@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 body{
-    background-color: #737373;
+    background-color: white;
 }
 h4{
     margin: auto;
@@ -44,6 +44,7 @@ input{
 .topHeader{
     padding: 20px;
     display: flex;
+    background-color: #737373;
 }
 .logo {
     width: 40%;
