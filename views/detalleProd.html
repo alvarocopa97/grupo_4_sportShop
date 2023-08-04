@@ -10,18 +10,21 @@
 <body>
 
     <!--encabezado-->
-
-    <div class="topHeader">
-        <figure class="logo">
-            <img src="/images/logo.png" alt="Logo">
-        </figure>
-        <input type="text">
-        <div class="iconosEncabezado">
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-user"></i>
+    <header >
+        <div class="top-header">
+            <div class="logo"> 
+                <img src="/images/logo.png" alt="Logo de MercadoLiebre">
+            </div>
+            <div class="form" action="#" method="GET">
+                <input type="text" placeholder="Buscar productos, marcas y mas ">
+                <!--input class="input">Buscar productos, marcas y más</input-->
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div>
+            <div class="iconosEncabezado">
+                <i class="fas fa-shopping-cart carrito"></i>
+                <i class="fas fa-user"></i>
+            </div>
         </div>
-    </div>
-    <header class="encabezado">
         <nav class="menu">
                 <ul class="opcionesMenu">
                     <li><a href="#">Categorias</a></li>
@@ -32,10 +35,7 @@
                     <li><a href="#">Ofertas</a></li>
                 </ul>
         </nav>
-        <figure class="carrucel">
-        </figure>
     </header>
-
     <!--fin encabezado-->
 
     <div class="detprod">
@@ -118,7 +118,7 @@
     
     <!--pie de pagina-->
 
-    <footer class="piePagina">
+    <footer id="pieDePagina">
         <div class="span">
             <p>ACERCA DE</p>
             <ul class="">
@@ -138,12 +138,12 @@
                 <li><a href="#">Entregas</a></li>
                 </ul>
         </div>
-        <div class="span">
+        <div class="redesSociales">
             <p>REDES SOCIALES</p>
             <ul class="">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Linkedin</a></li>
+                <li><i class="fab fa-instagram"></i><a href="#">Instagram</a></li>
+                <li><i class="fab fa-facebook"></i><a href="#">Facebook</a></li>
+                <li><i class="fab fa-twitter"></i><a href="#">Twitter</a></li>
                 </ul>
         </div>
         <div class="span">
@@ -154,11 +154,6 @@
                 <li><a href="#">0000-0000-0000</a></li>
                 </ul>
         </div>
-        <!--ul class="redesSociales">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Linkedin</a></li>
-        </ul-->
     </footer>
 
     <!--fin e pie de pagina-->
