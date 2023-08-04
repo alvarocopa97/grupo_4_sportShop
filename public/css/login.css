@@ -7,8 +7,8 @@
     font-size: 11px;
     
 }
-body{
-    background-color: #737373;
+main{
+    padding-bottom: 40px;
 }
 /*------Aplicando css a los datos-----*/
 .titulo p{

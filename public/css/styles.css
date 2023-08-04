@@ -1,74 +1,111 @@
-/*main.css master.css index.css styles.css estilos.css*/
-/*=== Aplicando CSS Global===*/
-*{
+/*=== css global===*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
-body{
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     background-color: white;
-}
-h4{
-    margin: auto;
-    padding: 40px;
-    padding-left: 20%;
-    font-size: 30px;
+
 }
 
-/*=== Aplicando CSS al Encabezado===*/
-header{
-    background-color: black;
-    padding: 15px;
+img {
+    width: 100%;
 }
-.iconosEncabezado{
-    width: 8%;
-    padding: auto;
-    margin: auto;
-    font-size: 40px;
+
+h3 {
+    font-size: 24px;
 }
-.iconosEncabezado ul{
-    display: flex;
-    justify-content: space-around;
-}
-input{
-    width: 40%;
-    padding: auto;
-    margin: auto;
-}
-.topHeader{
-    padding: 20px;
-    display: flex;
+
+
+header {
     background-color: #737373;
 }
-.logo {
-    width: 40%;
-}
-figure img{
-    width: 60%;
-}
-.menu{
+
+header div.top-header p {
     width: 100%;
-    padding: 10px;
-    margin: auto;
-}
-.opcionesMenu{
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-}
-header nav ul li a{
-    color: white;
-    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
 }
 
+/*===CSS para el div.top-header=== */
+.top-header {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+
+header div.logo,
+header .form {
+    width: 50%;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+/*=== CSS para el header .form===*/
+.form {
+    width: 50%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+}
+
+.form input {
+    padding-left: 10px;
+    background-color: #FFF;
+    border: 1px solid white;
+    outline: none;
+    width: 80%;
+}
+
+.submit {
+    background-color: #FFF;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+/*CSS icono del encabezado*/
+.iconosEncabezado{
+    display: flex;
+    position: absolute;
+    top: 11vh;
+    right: 2vh;
+    align-self: flex-end    ;
+    font-size: 30px;
+}
+.iconosEncabezado .carrito {
+    margin-right: 20px;
+}
+
+nav ul {
+    display: none;
+}
+
+
+ul li a {
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+main h4{
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+
 /*=== Aplicando CSS a la sección de productos===*/
-article.producto a.boton{
+article.producto a.boton {
     text-decoration: none;
     color: white;
     background-color: black;
@@ -76,96 +113,133 @@ article.producto a.boton{
     padding: 10px;
 }
 
+.producto{
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    padding: 20px;
+    margin: 2%;
+}
+.detalles-productos{
+}
+.price{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
 /*=== Aplicando CSS  al carrusel===*/
-    
+
 .slider {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
 }
 
 .slider ul {
-    display: flex;
-    padding: 0;
-    width: 200%;
-    
-    animation: cambio 10s infinite alternate linear;
+	display: flex;
+	padding: 0;
+	width: 200%;
+	
+	animation: cambio 10s infinite alternate linear;
 }
 
 .slider li {
-    width: 100%;
-    list-style: none;
+	width: 100%;
+	list-style: none;
 }
 
 .slider img {
-    width: 100%;
+	width: 100%;
 }
 
 @keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-    
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
 }
 
-@media (min-width: 768px){
-    /*=== Aplicando CSS al encabezado===*/
-    .encabezado{
+/*=== CSS al footer ===*/
+footer{
+    padding-top: 1em;
+    background-color: white;
+    padding-bottom: 1.3em;
+    text-align: center;
+}
+#pieDePagina{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+footer p {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+  
+footer ul li a {
+    color: white;
+}
+footer ul a:hover {
+    text-decoration: underline
+}
+@media (min-width: 768px) {
+    .top-header{
+        height: 2%;
+    }
+    .top-header .logo {
+        width: 25%;
+    }
+
+    .form {
+        margin: auto;
+        padding: auto;
+    }
+    .iconosEncabezado {
+        position: initial;
+        margin: auto;
+        padding: auto;
+        font-size: 35px;
+    }
+    .iconosEncabezado .carrito{
+        padding-right: 5px;
+    }
+    .productos {
         display: flex;
-        align-items: center;
     }
-    .logo{
-      width: 20%; 
-      margin: 0; 
-      padding-left: 10px;
+
+    .producto {
+        margin-right: 2%;
+
     }
+    /*Css al nav*/
     .menu{
+        background-color: #000;
+        margin-left: 0;
+    }
+    nav ul {
         display: flex;
-        width: 80%;
+        justify-content: space-around;
+        padding: 30px;
+    }
+    nav ul a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .main-article {
+        padding-bottom: 40px;
+    }
+
+
+    /*CSS al footer*/
+    #pieDePagina {
+        display: flex;
         justify-content: space-around;
     }
     
-
-    /*=== APlicando CSS a la sección de productos===*/
-    .productos{
-        display: flex;
-        padding-left: 20%;
-        padding-bottom: 40px;
-    }
-    section .producto{
-        padding-right: 100px;
-    }
-    article img{
-        width: 350px;
-    }
-    h6{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 14px;
-    }
-    h5{
-        font-size: 20px;
-        padding-bottom: 15px;
-    }
-    /*=== Aplicando CSS  al Footer===*/
-    .piePagina{
-        background-color: black;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-    }
-    footer p{
-        font-weight: bolder;
-        padding-bottom: 10px;
-        padding-top: 20px;
-    }
-    footer ul li a{
-        color: white;
-    }
-    footer ul a:hover{text-decoration:underline}
-    .opcionesMenu a:hover{text-decoration:underline}
-    .redesSociales ul i{
+    .redesSociales ul i {
         padding-right: 5px;
     }
 }
