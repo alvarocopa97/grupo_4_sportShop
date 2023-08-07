@@ -23,17 +23,13 @@ h3 {
 header {
     background-color: #737373;
 }
-
-header div.top-header p {
+/*===CSS para el div.top-header=== */
+header div.top-header {
     width: 100%;
     text-align: center;
-    margin-top: 10px;
-}
-
-/*===CSS para el div.top-header=== */
-.top-header {
     display: flex;
     padding-bottom: 20px;
+    
 }
 
 
@@ -44,6 +40,22 @@ header .form {
 
 header div.logo {
     padding: 10px;
+}
+.text-sport{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Bangers', cursive;
+    display:inline-block;
+    
+}
+.caja-shop{
+    padding: 0;
+}
+.text-shop{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #4CAF50;
+    font-family: 'Bangers', cursive;
 }
 
 /*=== CSS para el header .form===*/
@@ -81,18 +93,6 @@ header div.logo {
     margin-right: 20px;
 }
 
-nav ul {
-    display: none;
-}
-
-
-ul li a {
-    text-decoration: none;
-}
-ul li{
-    list-style-type: none;
-}
-
 main {
     width: 90%;
     margin: 0 auto;
@@ -101,7 +101,110 @@ main h4{
     font-size: 20px;
     padding: 20px;
 }
+/*CSS al nav*/
 
+.header {
+    background-color: black;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 20%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #4CAF50;;
+  }
+  
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 360px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
 
 
 /*=== Aplicando CSS a la sección de productos===*/
@@ -182,6 +285,15 @@ footer ul li a {
 footer ul a:hover {
     text-decoration: underline
 }
+.spam ul a{
+    text-decoration:  none;
+   
+}
+.spam ul i {
+    padding-right: 5px;
+}
+
+
 @media (min-width: 768px) {
     .top-header{
         height: 2%;
@@ -212,19 +324,25 @@ footer ul a:hover {
 
     }
     /*Css al nav*/
-    .menu{
-        background-color: #000;
-        margin-left: 0;
+    .header{
+        width: 100%;
+        position: static;
     }
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        padding: 30px;
-    }
-    nav ul a {
-        color: white;
-        font-size: 20px;
-    }
+
+    .header li {
+        float: left;
+      }
+      .header li a {
+        padding: 20px 30px;
+      }
+      .header .menu {
+        clear: none;
+        max-height: none;
+      }
+      .header .menu-icon {
+        display: none;
+      }
+
 
     .main-article {
         padding-bottom: 40px;
@@ -237,7 +355,10 @@ footer ul a:hover {
         justify-content: space-around;
     }
     
-    .redesSociales ul i {
-        padding-right: 5px;
+
+    .spam ul {
+        list-style: none;
+        text-align: left;
     }
+    
 }
