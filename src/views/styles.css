@@ -1,0 +1,125 @@
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.carrito {
+    
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos ael carrito y sección de productos */
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cantidad button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.cantidad input[type="number"] {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Estilos para la sección de forma de pago */
+
+.forma-pago, .envio, .total {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.forma-pago label, .envio label {
+    margin-top: 10px;
+    display: block;
+}
+
+.forma-pago input[type="radio"] {
+    margin-right: 5px;
+}
+
+.forma-pago button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forma-pago button:hover {
+    background-color: #000000;
+}
+
+/* Estilos para el botón "Calcular Total" */
+
+.total button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.total button:hover {
+    background-color: #000000;
+}
