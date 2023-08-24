@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<%- include('partials/head') %>
+<!-- /Head -->
+
+    <body>
+        <!-- Header -->
+        <%- include('partials/header') %>
+        <!-- /Header -->
+            <main>
+                <div class="contenedor">
+                    <div class="titulo">
+                        <h2>Iniciar sesion</h2>
+                    </div>
+                    <div class="botones">
+                        <div class="boton-izq">
+                            <p>Inicio Sesion</p>
+                        </div>
+                        <div class="boton-der">
+                            <p>Registrarme</p>
+                        </div>
+                    </div>
+
+                    <div class="caja-datos">
+                        <p>Email</p>
+                        <input class="datos" type="email" name="email" id="email">
+                    </div>
+                    <div class="caja-datos">
+                        <p>Contraseña</p>
+                        <input class="datos" type="password" name="contraseña" id="contraseña">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Recordarme</label>
+                    </div>
+                    <div class="pregunta">
+                        <p><a href="#">¿Olvidaste tu contraseña</a></p>
+                    </div>
+                    <div class="caja-datos">
+                        <div class="boton">
+                            <button type="submit" href="#"><span>ENVIAR</span></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Footer -->
+	        <%- include('partials/footer') %>
+	        <!-- /Fototer -->
+    </body>
+
+</html>
