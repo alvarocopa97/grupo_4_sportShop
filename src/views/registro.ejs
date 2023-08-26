@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head -->
+<%- include('partials/head') %>
+<!-- /Head -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="/css/registro.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
-    <main>
-        <div class="contenedor">
-            <div class="titulo">
-                <h2>Registrarme</h2>
-            </div>
-            <div class="botones">
-                <div href="/login" class="boton-izq">
-                    <p>Inicio Sesion</p>
+    <body>
+        <!-- Header -->
+        <%- include('partials/header') %>
+        <!-- /Header -->
+            <main>
+                <div class="contenedor">
+                    <div class="titulo">
+                        <h2>Registrarme</h2>
+                    </div>
+                    <div class="botones">
+                        <div href="/login" class="boton-izq">
+                            <p>Inicio Sesion</p>
+                        </div>
+                        <div class="boton-der">
+                            <p>Registrarme</p>
+                        </div>
+                    </div>
+                    <div class="caja-datos">
+                        <p>Nombre</p>
+                        <input class="datos" type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="caja-datos">
+                        <p>Apellido</p>
+                        <input class="datos" type="text" name="Apellido" id="Apellido">
+                    </div>
+                    <div class="caja-datos">
+                        <p>Email</p>
+                        <input class="datos" type="email" name="email" id="email">
+                    </div>
+                    <div class="caja-datos">
+                        <p>Contraseña</p>
+                        <input class="datos" type="password" name="contraseña" id="contraseña">
+                    </div>
+                    <div class="caja-datos">
+                        <div class="boton">
+                            <button type="submit" href="#"><span>Crear mi cuenta</span></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="boton-der">
-                    <p>Registrarme</p>
-                </div>
-            </div>
-            <div class="caja-datos">
-                <p>Nombre</p>
-                <input class="datos" type="text" name="nombre" id="nombre">
-            </div>
-            <div class="caja-datos">
-                <p>Apellido</p>
-                <input class="datos" type="text" name="Apellido" id="Apellido">
-            </div>
-            <div class="caja-datos">
-                <p>Email</p>
-                <input class="datos" type="email" name="email" id="email">
-            </div>
-            <div class="caja-datos">
-                <p>Contraseña</p>
-                <input class="datos" type="password" name="contraseña" id="contraseña">
-            </div>
-            <div class="caja-datos">
-                <div class="boton">
-                    <button type="submit" href="#"><span>Crear mi cuenta</span></button>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+            </main>
+            <!-- Footer -->
+	        <%- include('partials/footer') %>
+	        <!-- /Fototer -->
+    </body>
 
 </html>
