@@ -3,62 +3,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 11px;
-    
+    font-family: 'Ubuntu', sans-serif;   
 }
 body{
-    background-color: #737373;
+    background-color: white;
 }
-/*------Aplicando css a los datos-----*/
-.titulo p{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bolder;
-}
-.btones{
+
+/*------Aplicando css al main-----*/
+
+.contenedor{
     display: flex;
-}
-.boton-izq{
-    margin-top: 20px;
-    border: solid 1px black ;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-}
-.boton-der{
-    margin-top: 20px;
-    border: solid 1px black ;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 40px 100px 40px;
+    gap: 1.5em;
+    width: 80%;
+    margin: auto;
 }
 .botones{
     display: flex;
-    margin: auto;
-    justify-content: center;
+    ;
+}
+.boton-izq{
+    border: solid 1px black;
+    padding: 20px 10px 20px 10px;
+    cursor: pointer;
+}
+.boton-der{
+    border: solid 1px black;
+    padding: 20px 10px 20px 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
 }
 .caja-datos{
-    margin-top: 10px;
+ width: 100%;
 }
-.formulario{
-    width: 200px;
-    margin: auto;
-    margin-top: 100px;
-    
+.caja-datos .datos{
+    width: 100%;
+    padding: 0.5em;
 }
-.datos{
-    border: solid 1px black;
-    width: 200px;
-    padding: 2px;
-    margin-top: 2px;
-    margin:auto;
+.pregunta p{
+    text-decoration: none;
 }
-.boton{
+.boton button{
     color: white;
     background-color: black;
-    border: solid 0px black;
-    padding: 10px;
-    width: 200px;
-    margin-top: 20px;
+    border: none;
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.boton button:hover{
+    background: #141414;
+}
+/*----- Aplicando css a media desktop-----*/
+@media (min-width: 768px){
+    .contenedor{
+        width: 50%;
+        margin: auto;
+    }
 }
