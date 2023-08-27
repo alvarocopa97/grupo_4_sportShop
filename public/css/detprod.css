@@ -1,11 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
 }
 .detprod{
     background: rgb(160, 160, 160);
@@ -71,14 +66,14 @@
     margin-left: 1.5rem;
 }
 
-.carrito{
+.subdet2 .btncarrito{
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.carrito button{
+.subdet2 .btncarrito button{
     background-color: black;
     color: white;
     margin-top: 1rem;

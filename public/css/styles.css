@@ -92,7 +92,7 @@ header .form {
     align-self: flex-end    ;
     font-size: 30px;
 }
-.iconosEncabezado .carrito {
+.iconosEncabezado .carritoIcon {
     margin-right: 20px;
 }
 .iconosEncabezado i{
@@ -223,15 +223,18 @@ article.producto a.boton {
     border-radius: 10px;
     padding: 10px;
 }
-article.producto .boton:hover {
-    font-size: 20px;
-}
 .producto{
     padding-bottom: 30px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 2%;
 }
+.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 .price{
     font-size: 20px;
     padding-top: 10px;
