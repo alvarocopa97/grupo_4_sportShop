@@ -33,7 +33,17 @@ body{
     border: solid 1px black;
     padding: 20px 10px 20px 10px;
     cursor: pointer;
-    background-color: #4CAF50;
+}
+.boton-izq p{
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    
+}
+.boton-der p{
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
 }
 .caja-datos{
  width: 100%;
