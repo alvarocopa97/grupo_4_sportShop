@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 /*=== css global===*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Ubuntu', sans-serif;   
     background-color: white;
 
 }
@@ -102,13 +104,10 @@ header .form {
     font-size: 30px;
 }
 main {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
-main h4{
-    font-size: 20px;
-    padding: 20px;
-}
+
 /*CSS al nav*/
 
 .header {
@@ -141,7 +140,10 @@ main h4{
   
   
   /* menu */
-  
+  .caja-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   .header .menu {
     clear: both;
     max-height: 0;
@@ -223,13 +225,20 @@ article.producto a.boton {
     border-radius: 10px;
     padding: 10px;
 }
+.main-products{
+    width: 90%;
+    margin: auto;
+   }
+.productos{
+    margin-bottom: 20px;
+}
 .producto{
     padding-bottom: 30px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    margin: 2%;
+    margin-left: 5px;
 }
 .producto:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -307,7 +316,17 @@ footer ul a:hover {
 }
 
 
+
+
 @media (min-width: 768px) {
+   .main-article{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .main-products{
+    width: 70%;
+    margin: auto;
+   }
     .top-header{
         height: 2%;
     }
@@ -316,7 +335,6 @@ footer ul a:hover {
         padding-left: 70px;
         
     }
-
     .form {
         margin: auto;
         padding: auto;
@@ -335,7 +353,8 @@ footer ul a:hover {
         padding-right: 5px;
     }
     .productos {
-        display: flex;
+        width: 300px;
+        padding-bottom: 30px;
     }
 
     .producto {
@@ -362,12 +381,6 @@ footer ul a:hover {
         display: none;
       }
 
-
-    .main-article {
-        padding-bottom: 40px;
-    }
-
-
     /*CSS al footer*/
     #pieDePagina {
         display: flex;
@@ -380,4 +393,5 @@ footer ul a:hover {
         text-align: left;
     }
     
+
 }
