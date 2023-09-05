@@ -10,9 +10,9 @@
         <!-- /Header -->
         
         <div class="form">
-            <form action="¿?" method="___">
-                <h3 class="AddyEdit">Editar Producto</h3>
-                <div class="product-detail">
+            <form action="/products/edit/<%= productEdit.id%>" method="POST">
+                <h3 class="AddyEdit">Editar Producto: <%= productEdit.product%> </h3>
+                <div class="product-edit">
                     
                     <div >
                         <label for="name" class="form-label">Nombre del producto:</label>
@@ -39,7 +39,7 @@
                         <textarea name="description" id="description" class="form-input"></textarea>
                     </div>
                     <div >
-                        <button type="submit" class="buy-now-button ">Guardar producto</button>
+                        <button type="submit" class="buy-button ">Guardar producto</button>
                     </div>
                 </div>
             </form>

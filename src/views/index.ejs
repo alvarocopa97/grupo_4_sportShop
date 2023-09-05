@@ -31,7 +31,7 @@
                             <div class="detalles-productos">
                                 <h6><%= product.product %></h6>
                                 <h5 class="price">$<%= product.price %></h5>
-                                <a class="boton" href="/detalleProd">Ver detalle</a>
+                                <a class="boton" href="/products/detail/<%= product.id %>">Ver detalle</a>
                             </div>
                     </section>
                 <% }) %>
@@ -49,7 +49,7 @@
                             <div class="detalles-productos">
                                 <h6><%= product.product %></h6>
                                 <h5 class="price">$<%= product.price %></h5>
-                                <a class="boton" href="/detalleProd">Ver detalle</a>
+                                <a class="boton" href="/products/detail/<%= product.id %>">Ver detalle</a>
                             </div>
                     </section>
                 <% }) %>

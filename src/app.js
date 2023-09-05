@@ -9,7 +9,10 @@ app.set('views','./src/views');
 
 app.use(express.static('public'));
 
+const productsRouter = require('./routes/products');
+
 app.use('/', router)
+app.use('/products', productsRouter);
 
 app.listen(PORT, () => {
   console.log(`running on port ${PORT}`);
