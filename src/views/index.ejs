@@ -24,17 +24,18 @@
                 <h4 class="title">Lo mas vendido</h4>
             </div>
             <div class="main-article">
-                <% products.forEach(product => {%>
-                    <section class="productos">
-                        <article class="producto">
-                            <img src="/images/products/<%=product.image %>" alt="">
-                            <div class="detalles-productos">
-                                <h6><%= product.product %></h6>
-                                <h5 class="price">$<%= product.price %></h5>
-                                <a class="boton" href="/products/detail/<%= product.id %>">Ver detalle</a>
-                            </div>
-                    </section>
-                <% }) %>
+                <% for( let i = 0 ;i < products.length; i++){%>
+                        <section class="productos">
+                            <article class="producto">
+                                <img src="/images/products/<%=products[i].image %>" alt="">
+                                <div class="detalles-productos">
+                                    <h6><%= products[i].product %></h6>
+                                    <h5 class="price">$<%= products[i].price %></h5>
+                                    <a class="boton" href="/products/detail/<%=  products[i].id %>">Ver detalle</a>
+                                </div>
+                        </section>
+                        <% if(i==3) break;%>
+                <% } %>
             </div>
         </div>
         <div class="main-products">
@@ -42,17 +43,17 @@
                 <h4 class="title">Camisetas de Futbol</h4>
             </div>
             <div class="main-article">
-                <% products.forEach(product => {%>
+                <% for( let i = 4 ;i < products.length; i++){%>
                     <section class="productos">
                         <article class="producto">
-                            <img src="/images/remeras/<%=product.image %>" alt="">
+                            <img src="/images/products/<%=products[i].image %>" alt="">
                             <div class="detalles-productos">
-                                <h6><%= product.product %></h6>
-                                <h5 class="price">$<%= product.price %></h5>
-                                <a class="boton" href="/products/detail/<%= product.id %>">Ver detalle</a>
+                                <h6><%= products[i].product %></h6>
+                                <h5 class="price">$<%= products[i].price %></h5>
+                                <a class="boton" href="/products/detail/<%=  products[i].id %>">Ver detalle</a>
                             </div>
                     </section>
-                <% }) %>
+                <% } %>
             </div>
         </div>
 </main>

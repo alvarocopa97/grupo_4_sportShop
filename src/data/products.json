@@ -1,5 +1,66 @@
-[{"id":1,"product":"eu magna vulputate luctus cum sociis natoque","image":"prenda1.jpg","description":"proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat","features":"pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus","price":8464.45},
-{"id":2,"product":"lectus pellentesque eget nunc donec","image":"prenda2.jpg","description":"in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae","features":"eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis","price":4295.36},
-{"id":3,"product":"mattis nibh ligula nec sem","image":"prenda3.jpg","description":"blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in","features":"mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet","price":9376.38},
-{"id":4,"product":"nunc commodo placerat","image":"prenda4.jpg","description":"justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi","features":"pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna","price":1635.88}]
-
+[
+    {
+        "id": 1,
+        "product": "eu magna vulputate luctus cum sociis natoque",
+        "image": "prenda1.jpg",
+        "description": "proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat",
+        "features": "pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus",
+        "price": 8464.45
+    },
+    {
+        "id": 2,
+        "product": "lectus pellentesque eget nunc donec",
+        "image": "prenda2.jpg",
+        "description": "in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+        "features": "eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis",
+        "price": 4295.36
+    },
+    {
+        "id": 3,
+        "product": "mattis nibh ligula nec sem",
+        "image": "prenda3.jpg",
+        "description": "blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in",
+        "features": "mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet",
+        "price": 9376.38
+    },
+    {
+        "id": 4,
+        "product": "nunc commodo placerat",
+        "image": "prenda4.jpg",
+        "description": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi",
+        "features": "pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
+        "price": 1635.88
+    },
+    {
+        "id": 5,
+        "product": "nunc commodo placerat",
+        "image": "prenda8.jpg",
+        "description": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi",
+        "features": "pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
+        "price": 1635.88
+    },
+    {
+        "id": 6,
+        "product": "nunc commodo placerat",
+        "image": "prenda9.jpg",
+        "description": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi",
+        "features": "pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
+        "price": 1635.88
+    },
+    {
+        "id": 7,
+        "product": "nunc commodo placerat",
+        "image": "prenda10.jpg",
+        "description": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi",
+        "features": "pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
+        "price": 1635.88
+    },
+    {
+        "id": 8,
+        "product": "nunc commodo placerat",
+        "image": "prenda11.jpg",
+        "description": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi",
+        "features": "pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
+        "price": 1635.88
+    }
+]
