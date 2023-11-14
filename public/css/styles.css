@@ -91,18 +91,22 @@ header .form {
     position: absolute;
     top: 11vh;
     right: 2vh;
-    align-self: flex-end    ;
-    font-size: 30px;
+    align-self: flex-end ;
+
 }
-.iconosEncabezado .carritoIcon {
-    margin-right: 20px;
+.iconosEncabezado img{
+    width: 40px;
 }
 .iconosEncabezado i{
     color: black;
+    margin-right: 10px;
+    font-size: 40px;
 }
 .iconosEncabezado i:hover{
     font-size: 30px;
 }
+
+
 main {
     width: 100%;
     margin: 0 auto;
@@ -138,18 +142,18 @@ main {
     background-color: #4CAF50;;
   }
   
-  
   /* menu */
   .caja-title{
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .header .menu {
+  .header .menu, .nav-menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
   }
   
+
   /* menu icon */
   
   .header .menu-icon {
@@ -349,9 +353,66 @@ footer ul a:hover {
         color: black;
     }
     
-    .iconosEncabezado .carrito{
-        padding-right: 5px;
+    .iconosEncabezado .logoutIcon{
+        padding-left: 20px;
     }
+    /*nav del login y register*/
+    nav {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 5%;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li {
+        position: relative;
+        margin: auto;
+      }
+      nav ul button {
+        color: black;
+        font-size: 17px;
+        background: none;
+        border: none;
+        margin: auto;
+      }
+      .dropdown {
+        display: none;
+      }
+      .dropdown ul li {
+        padding: 10px ;
+      }
+      .dropdown ul li a {
+        color: #e0ffff;
+        font-size: 20px;
+      }
+      .dropdown ul li a:hover {
+        color: #00c2cb;
+      }
+      nav ul li button:focus + .dropdown {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: black;
+        margin: 10px;
+      }
+      nav ul li button:focus + .dropdown ul {
+        display: block;
+        margin: 10px;
+      }
+      nav ul li button:focus + .dropdown ul li {
+        width: 100px;
+        padding: 10px;
+      }
+
+
+
+
     .productos {
         width: 300px;
         padding-bottom: 30px;
@@ -373,14 +434,13 @@ footer ul a:hover {
       .header li a {
         padding: 20px 30px;
       }
-      .header .menu {
+      .header .menu, .nav-menu {
         clear: none;
         max-height: none;
       }
       .header .menu-icon {
         display: none;
       }
-
     /*CSS al footer*/
     #pieDePagina {
         display: flex;

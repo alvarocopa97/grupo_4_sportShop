@@ -65,9 +65,9 @@
   }
   
   .buy-now-button {
-    background-color: var(--light-blue);
+    background-color: black;
     font-size: 1.6em;
-    color: #ffffff;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +104,7 @@
     background-color: chocolate;
   }
   .action-button.delete {
-    background-color: rgb(248, 69, 37);
+    background-color: rgb(232, 45, 45);
   }
   
   @media (min-width: 768px) {
@@ -130,4 +130,11 @@
         margin:auto;
       }
 
+      .buy-now-button {
+        text-decoration: none;
+        width: 50%;
+      }
+      .edit {
+        text-decoration: none;
+      }
   }

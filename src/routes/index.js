@@ -1,13 +1,15 @@
 const express = require('express');
-const { indexControllers, loginControllers, registerControllers, agregarProdControllers, detalleProdControllers,productCartControllers} = require('../controllers');
+const { controladorHome, controladorLogin, controladorCarrito, controladorRegister} = require('../controllers');
 
 const router = express.Router();
 
-router.get('/',indexControllers)
-router.get('/agregar-producto',agregarProdControllers)
-router.get('/login',loginControllers)
-router.get('/registro',registerControllers)
-router.get('/detalleProd',detalleProdControllers)
-router.get('/productCart',productCartControllers)
+
+router.get('/', controladorHome);
+
+router.get('/carrito', controladorCarrito);
+
+//router.get('/editar', controladorEditar);
+//router.post('/update', controladorEditar);
+
 
 module.exports = router;

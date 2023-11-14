@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="/css/login.css">
 <!-- Head -->
 <%- include('partials/head') %>
 <!-- /Head -->
@@ -9,39 +10,45 @@
         <%- include('partials/header') %>
         <!-- /Header -->
             <main>
-                <div class="contenedor">
-                    <div class="titulo">
-                        <h2>Iniciar sesion</h2>
-                    </div>
-                    <div class="botones">
-                        <a href="/login" style="text-decoration: none;"><div class="boton-izq">
-                            <p>Inicio Sesion</p>
-                        </div></a>
-                        <a href="/registro" style="text-decoration: none;"><div class="boton-der">
-                            <p>Registrarme</p>
-                        </div></a>
-                    </div>
-
-                    <div class="caja-datos">
-                        <p>Email</p>
-                        <input class="datos" type="email" name="email" id="email">
-                    </div>
-                    <div class="caja-datos">
-                        <p>Contraseña</p>
-                        <input class="datos" type="password" name="contraseña" id="contraseña">
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Recordarme</label>
-                    </div>
-                    <div class="pregunta">
-                        <p><a href="#">¿Olvidaste tu contraseña</a></p>
-                    </div>
-                    <div class="caja-datos">
-                        <div class="boton">
-                            <button type="submit" href="#"><span>ENVIAR</span></button>
+                <form action="/user/login" method="post">
+                    <div class="contenedor">
+                        <div class="titulo">
+                            <h2>Iniciar sesion</h2>
+                        </div>
+                        <div class="botones">
+                            <a href="/login" style="text-decoration: none;"><div class="boton-izq">
+                                <p>Inicio Sesion</p>
+                            </div></a>
+                            <a href="/register" style="text-decoration: none;"><div class="boton-der">
+                                <p>Registrarme</p>
+                            </div></a>
+                        </div>
+                        <div class="caja-datos">
+                            <p>Email</p>
+                            <input class="label datos" type="text"name="email"  class="form-control">
+                            <% if(locals.errors && errors.email){ %>
+                                <div class="text-danger" style="color: red;">
+                                    <%= errors.email.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+                        <div class="caja-datos">
+                            <p>Contraseña</p>
+                            <input class="datos" type="password" name="password" id="contraseña">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Recordarme</label>
+                        </div>
+                        <div class="pregunta">
+                            <p><a href="#">¿Olvidaste tu contraseña</a></p>
+                        </div>
+                        <div class="caja-datos">
+                            <div class="boton">
+                                <button type="submit" href="#"><span>ENVIAR</span></button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </main>
             <!-- Footer -->
 	        <%- include('partials/footer') %>

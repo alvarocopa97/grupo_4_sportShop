@@ -1,32 +1,41 @@
-const fs= require('fs');
+const { json } = require('express');
+const fs = require ('fs');
 const path = require('path');
 
-const productsFilePath= path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'))
+const datos = ()=>{
+   const rawDatos = fs.readFileSync(path.resolve(__dirname, '../datos/datos.json'), 'utf-8')
+   
+   return JSON.parse(rawDatos);
+}
 
-const indexControllers = (req,res) =>{
-    res.render('index',{products});
+const controladorHome = (req,res)=>{
+    const products = datos();
+    res.render('home',{
+        products
+    })
 }
-const agregarProdControllers = (req,res) =>{
-    res.render('agregar-product');
+
+const controladorCarrito = (req,res)=>{
+    res.render('carrito')
 }
-const loginControllers = (req,res) =>{
-    res.render('login');
+
+
+
+const controladorRegister = (req,res)=>{
+    res.render('register')
 }
-const registerControllers = (req,res) =>{
-    res.render('registro');
+
+
+const controladorEditar = (req,res)=>{
+    res.render('editar')
 }
-const detalleProdControllers = (req,res) =>{
-    res.render('detalleProd');
-}
-const productCartControllers = (req,res) =>{
-    res.render('productCart');
+const controladorLoginView = (req,res)=>{
+    res.render('login')
 }
 module.exports = {
-    indexControllers,
-    agregarProdControllers,
-    loginControllers,
-    registerControllers,
-    detalleProdControllers,
-    productCartControllers,
+    controladorCarrito,
+    controladorHome,
+    controladorRegister,
+    controladorEditar,
+    controladorLoginView,
 }

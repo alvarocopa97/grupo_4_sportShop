@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head -->
+<%- include('partials/head') %>
+    <!-- /Head -->
+
+    <body>
+        <!-- Header -->
+        <%- include('partials/header') %>
+        <!-- /Header -->
+        
+        <div class="form">
+            <form action="/products/create" method="POST" enctype="multipart/form-data">
+                <h3 class="AddyEdit">Agregar Producto</h3>
+                <div class="product-edit">
+                    
+                    <div >
+                        <label for="name" class="form-label">Nombre del producto:</label>
+                        <input type="text" id="name" name="name" placeholder="Ej: Zapatillas Reebok" class="form-input">
+                    </div>
+                    <div >
+                        <label for="price" class="form-label">Precio del producto:</label>
+                        <input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
+                    </div>
+                    <div>
+                        <label for="image">Imagen:</label>
+                         <input type="file" id="image" name="image" accept="image/*">
+                    </div>
+                    <div >
+                        <label for="description" class="form-label">Envio:</label>
+                        <textarea name="envio" id="envio"  placeholder="Ej: Gratis" class="form-input"></textarea>
+                    </div>
+                    <div >
+                        <label for="description" class="form-label">Descipción:</label>
+                        <textarea name="description" id="description" class="form-input"></textarea>
+                    </div>
+                    <div >
+                        <button type="submit" class="buy-button ">Guardar producto</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+            
+            <!-- Footer -->
+            <%- include('partials/footer') %>
+            <!-- /Fototer -->
+    </body>
+
+</html>
