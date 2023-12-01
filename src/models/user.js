@@ -1,4 +1,4 @@
-
+const db = require('../database/models')
 const fs = require('fs')
 const User = { 
     fileName: './src/datos/userRegistro.json',
@@ -24,19 +24,32 @@ const User = {
         return userFound;
     },
     findByField: function(field, text){
-        let allUsers = this.findAll();
+        /*let allUsers = this.findAll();
         let userFound = allUsers.find(oneUser => oneUser[field] === text);
-        return userFound;
+        return userFound;*/
+        return db.User.findOne({
+            where:{
+                email: text
+            }
+        }).then(userFound =>{
+            return userFound
+        })
     },
     create:function(userData){
-        let allUsers = this.findAll();
+        /*let allUsers = this.findAll();
         let newUser = {
             id: this.generateId(),
             ...userData
         }
         allUsers.push(newUser);
-        fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
-        return true;
+        fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));*/
+        db.User.create({
+            ...userData
+        })
+        .then(user => {
+            return user
+        })
+
     },
     delete: function(id){
         let allUsers = this.findAll();

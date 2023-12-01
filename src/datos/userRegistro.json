@@ -1,10 +1,18 @@
 [
-    {
-     "id": 1,
-     "nombre": "alvaro",
-     "email": "alvaro@gmail.com",
-     "password": "$2a$10$WJ8RQM9lwSuJGSICSuRMZewfkOK.Glie0NrlTWnPbT9YsD8WAcpqm",
-     "country": "asd",
-     "avatar": "foto-1696390602627.png"
-    }
-   ]
+ {
+  "id": 1,
+  "nombre": "alvaro",
+  "email": "alvaro@gmail.com",
+  "password": "$2a$10$WJ8RQM9lwSuJGSICSuRMZewfkOK.Glie0NrlTWnPbT9YsD8WAcpqm",
+  "country": "asd",
+  "avatar": "foto-1696390602627.png"
+ },
+ {
+  "id": 2,
+  "nombre": "lalo",
+  "email": "lalo@gmail.com",
+  "password": "$2a$10$VkD2NYcdZzdQW1aVpsPhW.5fR0Va2PNI9J2k0MUvfA0MbsNgnBnZq",
+  "country": "argentina",
+  "avatar": "foto-1699937274840.jpg"
+ }
+]

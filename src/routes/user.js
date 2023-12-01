@@ -29,5 +29,5 @@ routerUser.post('/login', controladorUser.loginProcess);
 
 routerUser.get('/profile/',authMiddleware, controladorUser.profile);
 
-routerUser.get('/logout/',authMiddleware, controladorUser.logout);
+routerUser.get('/logout/', controladorUser.logout);
 module.exports = routerUser

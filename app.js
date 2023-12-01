@@ -1,5 +1,7 @@
 const express = require('express');
-
+const router = require('./src/routes');
+const routerProduct = require('./src/routes/productos');
+const userLoggedMiddleware = require('./src/middleware/userLoggedMidddleware');
 const routerUser = require('./src/routes/user');
 const session = require('express-session');
 const app = express ();
@@ -15,9 +17,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }));
+app.use(userLoggedMiddleware)
 
-const router = require('./src/routes');
-const routerProduct = require('./src/routes/productos');
 //const routerCreate=require('./src/routes/create');
 //const routerEditar=require('./src/routes/editar')
 

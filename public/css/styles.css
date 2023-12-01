@@ -347,7 +347,6 @@ footer ul a:hover {
         position: initial;
         margin: auto;
         padding: auto;
-        font-size: 35px;
     }
     .iconosEncabezado i{
         color: black;
@@ -357,13 +356,11 @@ footer ul a:hover {
         padding-left: 20px;
     }
     /*nav del login y register*/
-    nav {
-        height: 80px;
+    .nav {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 0px 5%;
       }
       nav ul {
         display: flex;
@@ -409,7 +406,6 @@ footer ul a:hover {
         width: 100px;
         padding: 10px;
       }
-
 
 
 

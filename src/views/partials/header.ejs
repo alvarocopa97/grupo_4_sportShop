@@ -1,55 +1,59 @@
-<header >
-    <div class="top-header">
-        <a href="/"><div class="logo"> 
-            <p class="text-sport">SPORT</p>
-            <p class="text-shop">SHOP</p>
-    </div></a>
-        <div class="form" action="#" method="GET">
-            <input type="text" placeholder="Buscar productos, marcas y mas ">
-            <!--input class="input">Buscar productos, marcas y más</input-->
-            <div class="submit"><i class="fa fa-search"></i></div>
-        </div>
-        <div class="iconosEncabezado">
-            <nav>
-                <!--Links-->
-                <ul>
-                
-                  <% if(locals.isLogged) {%>
-                    <li><a href="/login"><img src="/images/imagenesDeUsuario/<%=locals.userLogged.avatar %>" alt=""></i></a></li>
-                  <li><button>HI <%=locals.userLogged.nombre %><i class="fas fa-caret-down"></i></button>
-                    <div class="dropdown">
-                      <ul>
-                        <li><a href="/user/profile">Perfil</a></li>
-                        <li><a href="user/logout">Salir</a></li>
-                      </ul>
-                    </div>
+<header>
+  <div class="top-header">
+    <a href="/">
+      <div class="logo">
+        <p class="text-sport">SPORT</p>
+        <p class="text-shop">SHOP</p>
+      </div>
+    </a>
+    <div class="form" action="#" method="GET">
+      <input type="text" placeholder="Buscar productos, marcas y mas ">
+      <!--input class="input">Buscar productos, marcas y más</input-->
+      <div class="submit"><i class="fa fa-search"></i></div>
+    </div>
+    <div class="iconosEncabezado">
+      <nav>
+        <!--Links-->
+        
+        <ul >
 
-                  </li>
-                  <li><a href="/carrito"><i class="fas fa-shopping-cart carritoIcon"></i></a></li>
-                  <% } else { %>
-                    <li><a href="/carrito"><i class="fas fa-shopping-cart carritoIcon"></i></a></li>
-                    <li><a href="/login"><img src="/images/imagenesDeUsuario/user.png %>" alt=""></i></a></li>
-                    <% }%>
+          <% if(locals.isLogged) {%>
+            <li><a href="/login"><img src="/images/imagenesDeUsuario/<%=locals.userLogged.avatar %>" alt=""></a></li>
+            <li><button>HI <%=locals.userLogged.name %></button>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="/user/profile">Perfil</a></li>
+                  <li><a href="user/logout">Salir</a></li>
                 </ul>
-              </nav>
-            <!--
+              </div>
+
+              </li>
+              <li><a href="/carrito"><i class="fas fa-shopping-cart carritoIcon"></i></a></li>
+          <% } else { %>
+              <li><a href="/carrito"><i class="fas fa-shopping-cart carritoIcon"></i></a></li>
+              <li><a href="/login"><img src="/images/imagenesDeUsuario/user.png %>" alt=""></a></li>
+          <% } %>
+        </ul>
+        
+      </nav>
+      <!--
             <a href="/login"><img src="/images/imagenesDeUsuario/user.png %>" alt=""></i></a>
             <a href="/logout"><i class="fas fa-sign-out-alt logoutIcon" ></i></a>-->
-            
-        </div>
+
     </div>
-    <div class="header">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-          <ul class="menu">
-            <li><a href="/products/create">Categorias</a></li>
-            <li><a href="#">Hombre</a></li>
-            <li><a href="#">Mujer</a></li>
-            <li><a href="#">Zapatillas</a></li>
-            <li><a href="#">Marcas</a></li>
-            <li><a href="#">Ofertas</a></li>
-          </ul>
-        
-    </div>
+  </div>
+  <div class="header">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="/products/create">Categorias</a></li>
+      <li><a href="#">Hombre</a></li>
+      <li><a href="#">Mujer</a></li>
+      <li><a href="#">Zapatillas</a></li>
+      <li><a href="#">Marcas</a></li>
+      <li><a href="#">Ofertas</a></li>
+    </ul>
+
+  </div>
 
 </header>
