@@ -4,13 +4,18 @@ const routerProduct = require('./src/routes/productos');
 const userLoggedMiddleware = require('./src/middleware/userLoggedMidddleware');
 const routerUser = require('./src/routes/user');
 const session = require('express-session');
+const apiUsersRouter = require('./src/api/routes/user')
+const apiProductsRouter = require('./src/api/routes/product')
+const methodOverride = require('method-override');
 const app = express ();
 const PORT = 3001
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
-const methodOverride = require('method-override');
+app.use('/api/products',apiProductsRouter);
+
+app.use("/api/users",apiUsersRouter);
 app.use(methodOverride('_method'));
 app.use(session({
     secret: "Secret",
@@ -18,13 +23,6 @@ app.use(session({
     saveUninitialized: false,
 }));
 app.use(userLoggedMiddleware)
-
-//const routerCreate=require('./src/routes/create');
-//const routerEditar=require('./src/routes/editar')
-
-//const controladorProducts = require('./src/controllers/productos');
-//const controladorCreate = require('./src/controllers/create');
-//const controladorEditar = require('./src/controllers/editar');
 
 
 
