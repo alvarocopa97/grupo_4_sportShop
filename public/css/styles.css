@@ -15,8 +15,11 @@ body {
 
 img {
     width: 100%;
+    object-fit: cover;
 }
+.caja-img-productos {
 
+}
 h3 {
     font-size: 24px;
 }
@@ -240,10 +243,17 @@ article.producto a.boton {
     width: 90%;
     margin: auto;
    }
+   .caja-img-productos {
+    width: 84vw;
+    height: 87vw;
+    display: flex;
+    justify-content: center;
+}
 .main-article{
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+  flex-direction: column;
 }
 .productos{
   max-width: 100%;
@@ -389,6 +399,7 @@ nav ul li button:focus + .dropdown ul li {
    .main-article{
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-around;
    }
    .main-products{
     width: 70%;
@@ -456,9 +467,13 @@ nav ul li button:focus + .dropdown ul li {
         list-style: none;
         text-align: left;
     }
+    
     .caja-img-productos{
-      width: 250px;
-      height: 270px;
+      width: 18vw;
+      height: 19vw;
+      display: flex;
+      justify-content: center;
     }
+    
 
 }
