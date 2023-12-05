@@ -19,25 +19,23 @@
             </ul>
         </div> 
     <main>
-        <div class="main-products">
-            <div class="caja-title">
-                <h4 class="title">Lo mas vendido</h4>
-            </div>
+     <div class="seccion-productos">
+                <h4 class="caja-title">Lo mas vendido</h4>
             <div class="main-article">
                 <% products.forEach(product=>{ %>
                         <section class="productos">
                             <article class="producto">
                                 <img src="/images/products/<%=product.img %>" alt="">
                                 <div class="detalles-productos">
-                                    <h6><%= product.name %></h6>
-                                    <h5 class="price">$<%= product.price %></h5>
+                                    <h4><%= product.name %></h4>
+                                    <h3 class="price">$<%= product.price %></h3>
                                     <h5 class="description">$<%= product.description %></h5>
                                     <a class="boton" href="/products/productsDetail/<%=product.id %>">Ver detalle</a>
                                 </div>
                         </section>
                 <% }) %>
             </div>
-        </div>
+    </div>
 </main>
     <!-- Footer -->
 	<%- include('partials/footer') %>
