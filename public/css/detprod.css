@@ -1,140 +1,170 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*====== Product Detail ======*/
-
+.all-body{
+padding: 2em;
+}
 .title-detail{
-  text-align: center;
-  padding: 30px;
+text-align: center;
+padding: 30px;
 }
 .product-detail {
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .product-detail-img {
-    width: 70%;
-    display: block;
-    margin: auto;
-  }
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.caja-img-description{
+  max-width: 1000px;
+  min-width:320px ;
+  width: 75vw;
+  margin: auto;
+}
 
+.product-detail-img {
+  max-width: 1000px;
+  min-width:320px ;
+  object-fit: contain;
+  width: 75vw;
+}
+
+.product-detail-info {
+  border-left: 1px solid var(--light-gray);
+  padding: 15px;
+  height: 80%;
+  
+}
+
+.product-detail-title {
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.product-detail-description {
+  padding: 15px;
+  font-size: 20px;
+  width: 90%;
+  margin:auto;
+}
+
+.product-detail-price {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.actions-list {
+  margin-bottom: 50px;
+}
+
+.actions-list li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.actions-list i {
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.actions-list p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.buy-now-button {
+  background-color: black;
+  font-size: 1.6em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+.product-talle{
+  margin-top: 30px;
+}
+
+.product-talle .talle{
+  margin-top: 20px;
+  width: 40px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+}
+.action-button {
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  margin-top: 15px;
+}
+
+.action-button.edit {
+  background-color: chocolate;
+  font-size: 1.6em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+.action-button.delete {
+  background-color: rgb(232, 45, 45);
+  font-size: 1.6em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .main-detail{
+      display: flex;
+      justify-content: center;
+  }
   .product-detail-info {
-    border-left: 1px solid var(--light-gray);
-    padding: 15px;
-    height: 80%;
-    
-  }
-  
-  .product-detail-title {
-    font-weight: 400;
-    font-size: 50px;
-  }
-  
-  .product-detail-description {
-    padding: 15px;
-    font-size: 20px;
-    width: 90%;
-    margin:auto;
-  }
-  
-  .product-detail-price {
-    font-size: 30px;
-    margin: 10px 0;
-  }
-  
-  .actions-list {
-    margin-bottom: 50px;
-  }
-  
-  .actions-list li {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .actions-list i {
-    font-size: 15px;
-    margin-right: 15px;
-  }
-  
-  .actions-list p {
-    font-size: 15px;
-    margin: 0;
-  }
-  
-  .buy-now-button {
-    background-color: black;
-    font-size: 1.6em;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    border-radius: 8px;
-    border: none;
-    margin-bottom: 15px;
-  }
-  .product-talle{
-    margin-top: 30px;
-  }
-
-  .product-talle .talle{
-    margin-top: 20px;
-    width: 40px;
-    height: 50px;
-    margin-right: 20px;
-    background-color: black;
-    color: white;
-  }
-  .action-button {
-    border: none;
-    border-radius: 8px;
-    font-size: 1.2em;
-    color: #ffffff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-    margin-top: 15px;
-  }
-  
-  .action-button.edit {
-    background-color: chocolate;
-  }
-  .action-button.delete {
-    background-color: rgb(232, 45, 45);
-  }
-  
-  @media (min-width: 768px) {
-    .main-detail{
-        display: flex;
-        justify-content: center;
+      padding: 15px;
+      height: 50%;
+      
     }
-    .product-detail-info {
-        padding: 15px;
-        height: 50%;
-        
-      }
-      .product-detail-img {
-        width: 50%;
-        display: block;
-        margin: auto;
-      }
-      .product-detail-description {
-        padding-top: 20px;
-        padding-bottom: 40px;
-        font-size: 20px;
-        width: 52%;
-        margin:auto;
-      }
+    .product-detail-img {
+      width: 50%;
+      display: block;
+      margin: auto;
+      min-width: 350px
+    }
+    .product-detail-description {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      width: 52%;
+      margin:auto;
+    }
 
-      .buy-now-button {
-        text-decoration: none;
-        width: 50%;
-      }
-      .edit {
-        text-decoration: none;
-      }
-  }
+    .buy-now-button {
+      text-decoration: none;
+      width: 50%;
+    }
+    .edit {
+      text-decoration: none;
+    }
+}
