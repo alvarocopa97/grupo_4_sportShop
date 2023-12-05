@@ -43,9 +43,10 @@ const controladorProducts = {
             price: req.body.price,
             img: req.file.filename,
             envio: "$" + req.body.envio,
+            description : req.body.description
         })
         .then(products => {
-            res.redirect('/')
+            res.redirect('/products/listado')
         })
         //const data = JSON.stringify(products)
         //fs.writeFileSync(path.resolve(__dirname, '../datos/datos.json'), data)
@@ -94,6 +95,7 @@ const controladorProducts = {
             price: req.body.price,
             img: req.file.filename,
             envio: "$" + req.body.envio,
+            description : req.body.description
         },
         {
             where : {

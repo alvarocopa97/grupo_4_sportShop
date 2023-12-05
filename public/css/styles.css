@@ -95,12 +95,14 @@ header .form {
 
 }
 .iconosEncabezado img{
-    width: 40px;
+    width: 65px;
+    height: 50px;
+    border-radius: 60%;
 }
 .iconosEncabezado i{
     color: black;
     margin-right: 10px;
-    font-size: 40px;
+    font-size: 50px;
 }
 .iconosEncabezado i:hover{
     font-size: 30px;
@@ -329,13 +331,63 @@ footer ul a:hover {
     padding-right: 5px;
 }
 
+/*nav del login y register*/
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  position: relative;
+  margin: auto;
+}
+nav ul button {
+  color: black;
+  font-size: 17px;
+  background: none;
+  border: none;
+  margin: auto;
+}
+.dropdown {
+  display: none;
+}
+.dropdown ul li {
+  padding: 10px ;
+}
+.dropdown ul li a {
+  color: #e0ffff;
+  font-size: 20px;
+}
+.dropdown ul li a:hover {
+  color: #00c2cb;
+}
+nav ul li button:focus + .dropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: black;
+  margin: 10px;
+}
+nav ul li button:focus + .dropdown ul {
+  display: block;
+  margin: 10px;
+}
+nav ul li button:focus + .dropdown ul li {
+  width: 100px;
+  padding: 10px;
+}
 
 
 
 @media (min-width: 768px) {
    .main-article{
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
    }
    .main-products{
@@ -366,67 +418,14 @@ footer ul a:hover {
     .iconosEncabezado .logoutIcon{
         padding-left: 20px;
     }
-    /*nav del login y register*/
-    .nav {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      }
-      nav ul {
-        display: flex;
-        list-style: none;
-      }
-      nav ul li {
-        position: relative;
-        margin: auto;
-      }
-      nav ul button {
-        color: black;
-        font-size: 17px;
-        background: none;
-        border: none;
-        margin: auto;
-      }
-      .dropdown {
-        display: none;
-      }
-      .dropdown ul li {
-        padding: 10px ;
-      }
-      .dropdown ul li a {
-        color: #e0ffff;
-        font-size: 20px;
-      }
-      .dropdown ul li a:hover {
-        color: #00c2cb;
-      }
-      nav ul li button:focus + .dropdown {
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        background-color: black;
-        margin: 10px;
-      }
-      nav ul li button:focus + .dropdown ul {
-        display: block;
-        margin: 10px;
-      }
-      nav ul li button:focus + .dropdown ul li {
-        width: 100px;
-        padding: 10px;
-      }
-
-
+    
+    
 
     .productos {
         max-width: 23%;
     }
 
-    .producto {
-
-    }
+    
     /*Css al nav*/
     .header{
         width: 100%;
@@ -457,6 +456,9 @@ footer ul a:hover {
         list-style: none;
         text-align: left;
     }
-    
+    .caja-img-productos{
+      width: 250px;
+      height: 270px;
+    }
 
 }

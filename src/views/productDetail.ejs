@@ -17,16 +17,20 @@
 
                 <div class="caja-img-description">
                     <img src="/images/products/<%=product.img %>" alt="product image" class="product-detail-img">
-                </div>
-                <div class="caja-talle-btns">
-                    <div>
+                    <div class="caja-description">
+                        
                         <p class="product-detail-description">
+                            <h2>Descripcion</h2>
                             <%= product.description %>
                         </p>
                     </div>
+                </div>
+                
+                <div class="caja-talle-btns">
+                    
                     <article class="product-detail-info">
                         <h4 class="product-detail-title">
-                            <%= product.product %>
+                            <%= product.name %>
                                 </h2>
 
                                 <p class="product-detail-price">
@@ -59,7 +63,7 @@
                                 <a href="/products/editar/<%=product.id %>" class="action-button edit">EDITAR
                                     PRODUCTO</a>
                                 <form action="/products/delete/<%=product.id%>" method="post">
-                                    <button type="submit" class="action-button delete">ELIMINAR</button></a>
+                                    <a><button type="submit" class="action-button delete">ELIMINAR</button> </a> 
                                 </form>
 
                     </article>

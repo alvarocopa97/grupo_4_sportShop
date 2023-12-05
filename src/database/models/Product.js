@@ -20,6 +20,10 @@ module.exports = (sequelize, DataTypes )=>{
         img: {
             type: DataTypes.STRING(95),
             allowNull: false
+        },
+        description: {
+            type: DataTypes.STRING(95),
+            allowNull: false
         }
     },{
         tableName: 'products',
