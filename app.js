@@ -9,9 +9,16 @@ const apiProductsRouter = require('./src/api/routes/product')
 const methodOverride = require('method-override');
 const app = express ();
 const PORT = 3001
-
+const cors = require('cors')
+const corsOptions = {
+    origin: 'http://localhost:3000', 
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+  };
+app.use(cors(corsOptions))
 app.use(express.urlencoded({extended:false}));
-app.use(express.json());
+//app.use(express.json());
 
 app.use('/api/products',apiProductsRouter);
 

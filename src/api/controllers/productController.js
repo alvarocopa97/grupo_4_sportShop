@@ -19,7 +19,7 @@ const productAPIController = {
                 },
                 data: products
             }
-                res.json(respuesta);
+                return res.status(200).json(respuesta);
             })
     },
     
