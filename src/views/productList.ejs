@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head -->
+<%- include('partials/head') %>
+    <!-- /Head -->
+
+    <body>
+        <!-- Header -->
+        <%- include('partials/header') %>
+            <!-- /Header -->
+            <main>
+                <% for (let i=0; i < products.length; i++) { %>
+                    <section class="productos">
+                        <article class="producto">
+                            <div class="caja-img-productos">
+                                <img src="/images/products/<%= products[i].img %>" alt="">
+                            </div>
+                            <div class="detalles-productos">
+                                <h4>
+                                    <%= products[i].name %>
+                                </h4>
+                                <h3 class="price">$<%= products[i].price %>
+                                </h3>
+                                <a class="boton" href="/products/productsDetail/<%= products[i].id %>">Ver detalle</a>
+                            </div>
+                        </article>
+                    </section>
+                    <% } %>
+            </main>
+            <!-- Footer -->
+            <%- include('partials/footer') %>
+                <!-- /Fototer -->
+    </body>
+
+</html>

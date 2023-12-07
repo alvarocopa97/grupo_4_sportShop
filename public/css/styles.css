@@ -24,7 +24,9 @@ h3 {
     font-size: 24px;
 }
 
-
+.nombreUser{
+  display: none;
+}
 header {
     background-color: #737373;
 }
@@ -108,7 +110,7 @@ header .form {
     font-size: 50px;
 }
 .iconosEncabezado i:hover{
-    font-size: 30px;
+    font-size: 45px;
 }
 
 
@@ -396,6 +398,9 @@ nav ul li button:focus + .dropdown ul li {
 
 
 @media (min-width: 768px) {
+  .nombreUser{
+    display: inline;
+  }
    .main-article{
     flex-direction: row;
     align-items: flex-start;

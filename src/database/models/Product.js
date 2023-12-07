@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes )=>{
             allowNull: false
         },
         description: {
-            type: DataTypes.STRING(95),
+            type: DataTypes.STRING(2000),
             allowNull: false
         }
     },{

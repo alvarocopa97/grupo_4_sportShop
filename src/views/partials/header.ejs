@@ -19,7 +19,7 @@
 
           <% if(locals.isLogged) {%>
             <li><a href="/login"><img src="/images/imagenesDeUsuario/<%=locals.userLogged.avatar %>" alt=""></a></li>
-            <li><button>HI <%=locals.userLogged.name %></button>
+            <li class="nombreUser"><button>HI <%=locals.userLogged.name %></button>
               <div class="dropdown">
                 <ul>
                   <li><a href="/user/profile">Perfil</a></li>
