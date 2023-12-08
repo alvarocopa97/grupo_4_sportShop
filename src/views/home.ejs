@@ -26,11 +26,13 @@
                     <% if (products[i].name.includes('Zapatilla')) { %>
                     <section class="productos">
                         <article class="producto">
-                            <div class="caja-img-productos">
+                            <div class="caja-img-productos">                                
                                 <img src="/images/products/<%= products[i].img %>" alt="">
+                                
                             </div>
+                            <h4><%= products[i].name %></h4>
                             <div class="detalles-productos">
-                                <h4><%= products[i].name %></h4>
+                                <i class="far fa-heart" ></i>
                                 <h3 class="price">$<%= products[i].price %></h3>
                                 <a class="boton" href="/products/productsDetail/<%= products[i].id %>">Ver detalle</a>
                             </div>
@@ -50,6 +52,7 @@
                                 <img src="/images/products/<%= products[i].img %>" alt="">
                             </div>
                             <div class="detalles-productos">
+                                <i class="far fa-heart"></i>
                                 <h4><%= products[i].name %></h4>
                                 <h3 class="price">$<%= products[i].price %></h3>
                                 <a class="boton" href="/products/productsDetail/<%= products[i].id %>">Ver detalle</a>

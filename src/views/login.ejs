@@ -26,15 +26,16 @@
                         <div class="caja-datos">
                             <p>Email</p>
                             <input class="label datos" type="text"name="email"  class="form-control">
+                            
+                        </div>
+                        <div class="caja-datos">
+                            <p>Contraseña</p>
+                            <input class="datos" type="password" name="password" id="contraseña">
                             <% if(locals.errors && errors.email){ %>
                                 <div class="text-danger" style="color: red;">
                                     <%= errors.email.msg %>
                                 </div>
                                 <% } %>
-                        </div>
-                        <div class="caja-datos">
-                            <p>Contraseña</p>
-                            <input class="datos" type="password" name="password" id="contraseña">
                         </div>
                         <div class="checkbox">
                             <label><input type="checkbox"> Recordarme</label>

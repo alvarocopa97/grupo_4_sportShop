@@ -25,11 +25,11 @@
                     </div>
                     <div class="caja-datos">
                         <p>Nombre</p>
-                        <input class="datos" type="text" name="name" id="nombre">
+                        <input class="datos" type="text" name="name" id="nombre" required>
                     </div>
                     <div class="caja-datos">
                         <p>Email</p>
-                        <input class="datos" type="email" name="email" id="email">
+                        <input class="datos" type="email" name="email" id="email" required>
                         <% if(locals.errors && errors.email){ %>
                             <div class="text-danger" style="color: red;">
                                 <%= errors.email.msg %>
@@ -42,11 +42,11 @@
                     </div>
                     <div class="caja-datos">
                         <p>Contraseña</p>
-                        <input class="datos" type="password" name="password" id="contraseña">
+                        <input class="datos" type="password" name="password"  required id="contraseña">
                     </div>
                     <div class="caja-datos">
                         <p>Pais</p>
-                        <input class="datos"  type="text"name="country" required class="control">
+                        <input class="datos"  type="text"name="country" class="control" required>
                     </div>
                     
                     <div class="caja-datos">

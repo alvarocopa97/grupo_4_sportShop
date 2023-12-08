@@ -17,9 +17,6 @@ img {
     width: 100%;
     object-fit: cover;
 }
-.caja-img-productos {
-
-}
 h3 {
     font-size: 24px;
 }
@@ -256,6 +253,7 @@ article.producto a.boton {
   flex-wrap: wrap;
   gap: 1em;
   flex-direction: column;
+  
 }
 .productos{
   max-width: 100%;
@@ -266,8 +264,20 @@ article.producto a.boton {
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    position: relative;
 }
-
+.productos article i{
+  display: block;
+    font-size: 25px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
 .producto:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
@@ -342,58 +352,50 @@ footer ul a:hover {
 .spam ul i {
     padding-right: 5px;
 }
-
 /*nav del login y register*/
-.nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul li {
-  position: relative;
+nav ul li{
   margin: auto;
 }
-nav ul button {
+nav ul a{
   color: black;
-  font-size: 17px;
-  background: none;
-  border: none;
-  margin: auto;
+  font-weight: bolder;
 }
-.dropdown {
-  display: none;
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
 }
-.dropdown ul li {
-  padding: 10px ;
+.dropdownPerfil{
+    display: block;
+    background: black;
+    text-decoration: none;
+    transition: 330ms all ease-out;
+    color: black;
+    margin: auto;
 }
-.dropdown ul li a {
-  color: #e0ffff;
-  font-size: 20px;
+.dropdownPerfil li a{
+      color: white;
+      margin: auto;
 }
-.dropdown ul li a:hover {
-  color: #00c2cb;
+.dropdownPerfil li:hover{
+  background-color: #4CAF50;
 }
-nav ul li button:focus + .dropdown {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: black;
-  margin: 10px;
+.dropdownPerfil li{
+  padding: 0.9rem;
 }
-nav ul li button:focus + .dropdown ul {
-  display: block;
-  margin: 10px;
+nav ul li ul{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 330ms all ease-out;
+    
 }
-nav ul li button:focus + .dropdown ul li {
-  width: 100px;
-  padding: 10px;
-}
+
 
 
 

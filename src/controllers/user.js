@@ -63,7 +63,7 @@ const controladorUser = {
                 return res.render('login',{
                     errors:{
                         email:{
-                            msg:'contraseña incorrecta'
+                            msg:'email o contraseña incorrecta'
                         }
                     }
                 });
