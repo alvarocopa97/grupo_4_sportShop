@@ -27,7 +27,7 @@ routerProduct.get('/delete', controladorProducts.destroy);
 routerProduct.post('/delete/:id', controladorProducts.destroy);
 routerProduct.get('/editar/:id', controladorProducts.editar);
 routerProduct.post('/editar/:id',upload.single('foto'), controladorProducts.update);
-
+routerProduct.get('/carrito/:id', controladorProducts.shopping)
 
 
 module.exports = routerProduct;

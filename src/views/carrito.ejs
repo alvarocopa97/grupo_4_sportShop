@@ -13,9 +13,9 @@
         <h2>Carrito de Compras</h2>
         <div class="productos">
             <div class="producto">
-                <img src="imagen_producto1.jpg" alt="Producto 1">
-                <h3>Producto 1</h3>
-                <p>Precio: $20</p>
+                <img src="/images/products/<%=product.img %>" alt="Producto 1">
+                <h3><%= product.name %></h3>
+                <p>$<%= product.price %></p>
                 <div class="cantidad">
                     <button onclick="restarCantidad('cantidad_producto1')">-</button>
                     <input type="number" id="cantidad_producto1" value="1">
@@ -29,14 +29,20 @@
         <div class="forma-pago">
             <h3>Forma de Pago</h3>
             <form>
-                <input type="radio" id="deposito" name="forma_pago" value="deposito">
-                <label for="deposito">Depósito o Transferencia Bancaria</label><br>
-
-                <input type="radio" id="mercadopago" name="forma_pago" value="mercadopago">
-                <label for="mercadopago">MercadoPago - Tarjetas online, PagoFacil, RapiPago</label><br>
-
-                <input type="radio" id="tarjeta" name="forma_pago" value="tarjeta">
-                <label for="tarjeta">Tarjetas Visa o Mastercard</label><br>
+                <div>
+                    <input type="radio" class="caja-check" id="deposito" name="forma_pago" value="deposito">
+                    <label for="deposito">Depósito o Transferencia Bancaria</label><br>
+                </div>
+                
+                <div>
+                    <input type="radio" class="caja-check"  id="mercadopago" name="forma_pago" value="mercadopago">
+                    <label for="mercadopago">MercadoPago - Tarjetas online, PagoFacil, RapiPago</label><br>
+                </div>
+                <div>
+                    <input type="radio" class="caja-check"  id="tarjeta" name="forma_pago" value="tarjeta">
+                    <label for="tarjeta">Tarjetas Visa o Mastercard</label><br>
+                </div>
+                
             </form>
         </div>
         <div class="envio">

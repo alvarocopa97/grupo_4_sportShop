@@ -1,0 +1,26 @@
+.action-button.edit {
+    background-color: chocolate;
+    font-size: 1.6em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    width: 50%;
+  }
+  .action-button.delete {
+    background-color: rgb(232, 45, 45);
+    font-size: 1.6em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    margin: auto;
+  }

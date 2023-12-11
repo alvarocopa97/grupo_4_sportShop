@@ -55,7 +55,7 @@ const controladorProducts = {
     producto: function (req, res) {
         db.Product.findAll()
             .then(products => {
-                return res.render('home', {products:products})
+                return res.render('productList', {products:products})
             })
     },
     destroy: (req, res) => {
@@ -128,6 +128,26 @@ const controladorProducts = {
         });
         */
     },
+    shopping: function (req, res) {
+        const id = req.params.id;
+    
+        if (!id) {
+            return res.render('carritoVacio'); // Renderiza la vista de carrito vacío si no se proporciona un ID
+        }
+    
+        db.Product.findByPk(id, { raw: true })
+            .then(product => {
+                if (!product) {
+                    return res.render('carritoVacio'); // Si no se encuentra el producto, renderiza la vista de carrito vacío
+                }
+                return res.render('carrito', { product: product }); // Renderiza la vista 'carrito' con el producto encontrado
+            })
+            .catch(err => {
+                console.error(err);
+                return res.status(500).send('Error al procesar la solicitud');
+            });
+    }
+    
 }
 
 

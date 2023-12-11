@@ -57,15 +57,15 @@
                                     </li>
                                 </ul>
 
-                                <a href="#" class="buy-now-button">COMPRAR AHORA</a>
+                                <a href="/products/carrito/<%=product.id %>" class="buy-now-button">COMPRAR AHORA</a>
                                 <hr>
-
+                                <% if(locals.isLogged) {%>
                                 <a href="/products/editar/<%=product.id %>" class="action-button edit">EDITAR
                                     PRODUCTO</a>
                                 <form action="/products/delete/<%=product.id%>" method="post">
                                     <a><button type="submit" class="action-button delete">ELIMINAR</button> </a> 
                                 </form>
-
+                                <% } %>
                     </article>
                 </div>
             </div>

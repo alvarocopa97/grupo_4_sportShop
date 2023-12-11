@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+    <link rel="stylesheet" href="/css/listadoProd.css">
 <!-- Head -->
 <%- include('partials/head') %>
     <!-- /Head -->
@@ -9,23 +10,29 @@
         <%- include('partials/header') %>
             <!-- /Header -->
             <main>
-                <% for (let i=0; i < products.length; i++) { %>
+                <h1> Listado de Productos</h1>
+                <a href="/products/create"><i class="fas fa-solid fa-plus"></i></a>
+                <% products.forEach(function(product) { %>
                     <section class="productos">
                         <article class="producto">
                             <div class="caja-img-productos">
-                                <img src="/images/products/<%= products[i].img %>" alt="">
+                                <img src="/images/products/<%= product.img %>" alt="">
                             </div>
                             <div class="detalles-productos">
                                 <h4>
-                                    <%= products[i].name %>
+                                    <%= product.name %>
                                 </h4>
-                                <h3 class="price">$<%= products[i].price %>
+                                <h3 class="price">$<%= product.price %>
                                 </h3>
-                                <a class="boton" href="/products/productsDetail/<%= products[i].id %>">Ver detalle</a>
+                                <a href="/products/editar/<%=product.id%>" class="action-button edit">EDITAR
+                                    PRODUCTO</a>
+                                <form action="/products/delete/<%=product.id%>" method="post">
+                                    <a><button type="submit" class="action-button delete">ELIMINAR</button> </a> 
+                                </form>
                             </div>
                         </article>
                     </section>
-                    <% } %>
+                <% }); %>
             </main>
             <!-- Footer -->
             <%- include('partials/footer') %>

@@ -83,7 +83,9 @@ h2 {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
+.total{
+    margin:auto;
+}
 .forma-pago label, .envio label {
     margin-top: 10px;
     display: block;
@@ -115,9 +117,16 @@ h2 {
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-    width: 100%;
+    width: 30%;
 }
 
 .total button:hover {
     background-color: #000000;
+}
+form div{
+    display: flex;
+    margin: auto;
+}
+.caja-check{
+    margin-top: 10px;
 }
