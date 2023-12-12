@@ -395,6 +395,9 @@ nav ul li ul{
     transition: 330ms all ease-out;
     
 }
+.banner-buttom {
+  display: none;
+}
 
 
 
@@ -442,7 +445,17 @@ nav ul li ul{
     .productos {
         max-width: 23%;
     }
-
+    .banner-buttom {
+        display: flex;
+        margin-top: 5em;
+        padding: 10px 57px 10px 10px;
+    }
+    .env{
+      width: 50%;
+    }
+    .pag{
+    width: 50%;
+    }
     
     /*Css al nav*/
     .header{
