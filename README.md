@@ -8,10 +8,10 @@ Nuestro sistema de gestión está optimizado para reducir los costos y maximizar
 
 Integrantes "SportShop":
 
--Alvaro Copa
+-Alvaro Copa (https://github.com/alvarocopa97)
 -Francisco Tolaba (https://github.com/RFranciscoTolaba)
--Franco Sanchez
--Maria Vedia
+-Franco Sanchez (https://github.com/Seiseishon)
+-Maria Vedia (https://github.com/Maria-Vedia)
 
 Inspiraciones:
 -https://www.stockcenter.com.ar/home. Inspiracion para el Home-Registro-Login
