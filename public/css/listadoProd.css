@@ -1,6 +1,79 @@
-.action-button.edit {
+
+.caja{
+  /*justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
+  max-width: 80%;
+  padding-left: 40px;
+}
+
+
+.titulo{
+  padding-top: 20px;
+  text-align: center;
+}
+ #botonAgregar{
+  background-color: green;
+  color: white;
+  /*font-size: 30px ;
+  padding: 5px;
+  border-radius: 8px;*/
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  margin: auto;
+
+ }
+.contenedorProducto{
+  text-align: center;
+  max-width: 80%;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 70px;
+}
+.cajaProducto{
+  background-color: rgb(223, 214, 214);
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  gap: 70px;
+  padding: 20px;
+}
+.imgProducto{
+  width: 100%;
+  max-width: 100%;
+}
+.cajaDetalle{
+  text-align: center;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.nombreProducto{
+  font-size: 30px;
+}
+.precioProducto{
+  width: 20%;
+}
+.cajaBotones{
+  align-items: center;
+}
+button{
+  width: 100px;
+  max-width: 200px;
+}
+.botonEditar {
     background-color: chocolate;
-    font-size: 1.6em;
+    font-size: 14px;
     color: white;
     display: flex;
     align-items: center;
@@ -9,11 +82,11 @@
     border-radius: 8px;
     border: none;
     margin-bottom: 15px;
-    width: 50%;
+    margin: auto;
   }
-  .action-button.delete {
+  .botonEliminar {
     background-color: rgb(232, 45, 45);
-    font-size: 1.6em;
+    font-size: 14px;
     color: white;
     display: flex;
     align-items: center;
