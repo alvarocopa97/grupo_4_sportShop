@@ -1,16 +1,22 @@
-Nuestro sitio web está enfocado a la compra de productos deportivos. Sus productos son variados, como: calzados, 
-prendas de ropa y accesorios para los deportes. Esta web está enfocada para todas las edades.
+Descubre la Experiencia Completa en Ropa Deportiva con Sport Shop
 
-Integrantes:
+Nos complace presentarles SportShop, una tienda deportiva online que sirve a todos esos amantes del deporte y amantes del fitness, contamos con un catálogo diverso que va desde ropa deportiva de alta calidad hasta accesorios y equipo de primera linea. Esta tienda se ha ganado una reputación por ofrecer productos de primera clase a precios comodos. Nuestra página web está diseñada para una experiencia de compra fácil y segura, descubre recomendaciones basadas en tus preferencias y encuentra fácilmente lo que necesitas.
+Nuestro sistema de gestión está optimizado para reducir los costos y maximizar las ventas. Tenemos relaciones fuertes con proveedores confiables de primera marca.
+
+ En SportShop, nuestra misión es inspirar a las personas a vivir una vida activa y saludable a través de la moda deportiva. Queremos ser tu apoyo en el camino hacia el bienestar, ofreciendote no solo productos de la más alta calidad, sino también motivandote y apoyandote.
+ Entra en el mundo de Sport Shop y descubre la fusión perfecta entre estilo y rendimiento. ¡Prepárate para elevar tu juego con cada compra en SportShop!
+
+Integrantes "SportShop":
+
 -Alvaro Copa
--Francisco Tolaba
--Ruben Cruz
--Johana Victoria
--Alejandra Mamani
+-Francisco Tolaba (https://github.com/RFranciscoTolaba)
+-Franco Sanchez
+-Maria Vedia
 
 Inspiraciones:
 -https://www.stockcenter.com.ar/home. Inspiracion para el Home-Registro-Login
 -https://www.sporting.com.ar/. Inspiracion para el Detalle del Prodcuto
 
-trello:
+
+Tablero de trello
 -https://trello.com/b/HfMBqrmJ/proyecto-sport-shop
